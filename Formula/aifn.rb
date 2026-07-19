@@ -5,21 +5,21 @@
 class Aifn < Formula
   desc "aifn - AI function CLI tool"
   homepage "https://github.com/aifunc-dev/aifunc"
-  version "0.4.0"
+  version "0.5.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aifunc-dev/aifunc/releases/download/v0.4.0/aifn_0.4.0_darwin_amd64.tar.gz"
-      sha256 "7090b7f18037f2b6aaa1dfdac6a46cedca068161a9792b6ab8c70e9485f3d217"
+      url "https://github.com/aifunc-dev/aifunc/releases/download/v0.5.0/aifn_0.5.0_darwin_amd64.tar.gz"
+      sha256 "6eb3f1f0e4fee5d94c8f5b5c18b25a781970f2198764146607ffbc60b09ce4ef"
 
       define_method(:install) do
         bin.install "aifn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aifunc-dev/aifunc/releases/download/v0.4.0/aifn_0.4.0_darwin_arm64.tar.gz"
-      sha256 "0dc29f5d029897317815dc4b24cfa3278e0dcb673c8ef7b60e87f702d76706b3"
+      url "https://github.com/aifunc-dev/aifunc/releases/download/v0.5.0/aifn_0.5.0_darwin_arm64.tar.gz"
+      sha256 "cc94e1a05378496b11aeb57035c4c98da67dfa44ef1e7ad4afcf58fa866ad346"
 
       define_method(:install) do
         bin.install "aifn"
@@ -29,15 +29,15 @@ class Aifn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aifunc-dev/aifunc/releases/download/v0.4.0/aifn_0.4.0_linux_amd64.tar.gz"
-      sha256 "92ffa81ce74f113e51d2d6ba0657f6b66695eb35ddbceca15a65f84e1a3541ca"
+      url "https://github.com/aifunc-dev/aifunc/releases/download/v0.5.0/aifn_0.5.0_linux_amd64.tar.gz"
+      sha256 "506dd14d2d93813e598cce2bd08e6dfa2238ead6b0e99800574078a82dee671f"
       define_method(:install) do
         bin.install "aifn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aifunc-dev/aifunc/releases/download/v0.4.0/aifn_0.4.0_linux_arm64.tar.gz"
-      sha256 "064f2ccca1ea4569edea9e3c88758c2ca829065828919baa851b194f0156c4b4"
+      url "https://github.com/aifunc-dev/aifunc/releases/download/v0.5.0/aifn_0.5.0_linux_arm64.tar.gz"
+      sha256 "996e3fcca62479d64a263c23bc28063e8d9be9b211d5d8f1bccd54b022659ca9"
       define_method(:install) do
         bin.install "aifn"
       end
